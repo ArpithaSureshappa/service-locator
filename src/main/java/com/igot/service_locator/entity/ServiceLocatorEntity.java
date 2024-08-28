@@ -63,9 +63,9 @@ public class ServiceLocatorEntity implements Serializable {
     @JsonProperty("isSecureHeader")
     private boolean isSecureHeader=true;
 
-    @Column(name = "secure_vendor_name")
-    @JsonProperty("secureVendorName")
-    private String secureVendorName;
+    @Column(name = "url_segment")
+    @JsonProperty("urlSegment")
+    private String urlSegment;
 
     public enum RequestMethod {
         GET("GET"),

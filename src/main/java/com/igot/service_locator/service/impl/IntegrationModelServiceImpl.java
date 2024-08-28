@@ -85,7 +85,6 @@ public class IntegrationModelServiceImpl implements IntegrationModelService {
                     // Replace the placeholder with an empty string if the value is null
                     urlToModify = urlToModify.replace(placeholder, "");
                 }
-                log.info("url {}", urlToModify);
             }
         }
         return urlToModify;

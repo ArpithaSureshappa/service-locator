@@ -10,22 +10,20 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("servicelocator/api")
+@RequestMapping("servicelocator/")
 @Slf4j
 public class IntegrationController {
 
     @Autowired
     IntegrationModelService service;
 
-    @PostMapping("/v1/callExternalApi")
+    @PostMapping("api/v1/callExternalApi")
     public Object callExternalApiService(@RequestBody IntegrationModel integrationModel, HttpServletRequest httpServletRequest) throws IOException {
         return service.getDetailsFromExternalService(integrationModel, httpServletRequest);
     }
 
-    @GetMapping("/v1/callBackForToken")
-    public void acceptTokenCallBack() {
+    @GetMapping("api/v1/callBackForToken")
+    public void acceptTokenCallBack(@RequestParam String code) {
         log.info("code");
     }
-
-
 }

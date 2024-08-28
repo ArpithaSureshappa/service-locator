@@ -5,16 +5,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.12</version>
+        <version>2.7.16</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.igot</groupId>
-    <artifactId>service-locator</artifactId>
+    <artifactId>cb-service-registry</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-locator</name>
-    <description>service-locator</description>
+    <name>cb-service-registry</name>
+    <description>cb-service-registry</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
 
 	<dependencies>
